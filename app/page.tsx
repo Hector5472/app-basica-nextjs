@@ -13,11 +13,31 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+          <h1 className="max-w-xs text-4xl font-bold leading-12 tracking-tight text-black dark:text-white">
+            App Básica de Héctor con Next.js y Tailwind CSS
           </h1>
+          <p className="max-w-md text-base leading-7 text-zinc-500 dark:text-zinc-300">
+            Este es un proyecto básico de Next.js con Tailwind CSS. Personaliza esta página según tus necesidades.
+          </p>
+          <p>Esto es la app básica que he creado, siendo la página default con algo de personalización.</p>
+
+          <p className="text-lg font-semibold mt-4 mb-2">Mira este perro</p>
+          <a
+            href="/images/perro.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <Image
+              src="/images/perro.jpg"
+              alt="Perro"
+              width={300}
+              height={300}
+              className="rounded-lg"
+            />
+          </a>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+            "Looking for a starting point or more instructions? Head over to{" "}"
             <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
